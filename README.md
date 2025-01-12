@@ -49,4 +49,4 @@ Building this platform on the Ethereum blockchain enables decentralization and t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/wip-community-token.git
+   git clone https://github.com/roisin-kiely/wip-community-token.git
