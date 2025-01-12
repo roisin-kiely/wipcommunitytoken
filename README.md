@@ -50,3 +50,7 @@ Building this platform on the Ethereum blockchain enables decentralization and t
 1. Clone the repository:
    ```bash
    git clone https://github.com/roisin-kiely/wip-community-token.git
+
+## Credits
+
+This project was created with the help of learning resources from [SuperHi](https://www.superhi.com/), which provided valuable tutorials on WordPress and web development.
