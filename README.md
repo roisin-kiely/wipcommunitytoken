@@ -1,6 +1,6 @@
 # WIP Community Token
 
-This project is a decentralized platform for showcasing AI-generated art within a community. It uses the **WIP token** built on the Ethereum blockchain to enable users to engage, tip, and reward each other. Through blockchain technology, it creates a fair, transparent, and community-driven environment where users can participate in the art community by interacting with others using WIP tokens.
+This project is a decentralized platform for showcasing AI-generated art within a community. W-I-P stands for Work In Progress. It uses the **WIP token** built on the Ethereum blockchain to enable users to engage, tip, and reward each other. Through blockchain technology, it creates a fair, transparent, and community-driven environment where users can participate in the art community by interacting with others using WIP tokens.
 
 ## Purpose
 
