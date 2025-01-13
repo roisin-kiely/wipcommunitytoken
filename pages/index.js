@@ -2,20 +2,17 @@ import { useState, useEffect, useContext } from 'react';
 import Head from 'next/head';
 import { WalletContext } from "../lib/wallet";
 
-// Import SendForm from components folder if it exists
-import SendForm from '../components/SendForm'; // Adjust the path if needed
-import EthName from '../components/EthName'; // Ensure EthName is also imported if used
-import Price from '../components/Price'; // Ensure Price is also imported if used
-
-// Ensure metadata is imported correctly
-import metadata from '../public/data/metadata.json'; // Adjust the path if needed
-
-// Import the Post component
-import Post from '../components/Post'; // Ensure the Post component is correctly imported
+// Import components
+import SendForm from '../components/SendForm';
+import EthName from '../components/EthName';
+import Price from '../components/Price';
+import metadata from '../public/data/metadata.json';
+import Post from '../components/Post';
 
 function App() {
   const { isConnected, accounts, connect, balance, canPost, canComment, applyForWip } = useContext(WalletContext);
   const [toggleSendForm, setToggleSendForm] = useState(false);
+  const [showPrototypeMessage, setShowPrototypeMessage] = useState(false);  // State to show the prototype message
 
   useEffect(() => {
     if (toggleSendForm) {
@@ -26,7 +23,12 @@ function App() {
   }, [toggleSendForm]);
 
   const applyForWipLink = (
-    <a href="#" onClick={applyForWip}>Apply for $WIP</a>
+    <a href="#" onClick={() => { 
+        applyForWip(); 
+        setShowPrototypeMessage(true);  // Show the prototype message when clicked
+    }}>
+      Apply for $WIP
+    </a>
   );
 
   const toggleForm = e => {
@@ -65,13 +67,13 @@ function App() {
         )}
       </header>
 
-            {showPrototypeMessage && (
+      {showPrototypeMessage && (
         <div className="prototype-message">
-          <p>This is a prototype version of our site. We are testing and building. Stay tuned for future updates and enhancements!" </p>
+          <p>This is a prototype version of our site. We’re testing and building. Stay tuned for future updates and enhancements!" </p>
         </div>
       )}
 
-      <SendForm toggle={toggleSendForm} /> {/* Conditionally render SendForm based on toggle */}
+      <SendForm toggle={toggleSendForm} /> {/* Conditionally render SendForm */}
 
       <main>
         {metadata.map((data, index) => {
