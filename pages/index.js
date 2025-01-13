@@ -67,7 +67,7 @@ function App() {
 
             {showPrototypeMessage && (
         <div className="prototype-message">
-          <p>This is a prototype version of our site. We’re testing and building, and your feedback is invaluable. Stay tuned for future updates and enhancements!" </p>
+          <p>This is a prototype version of our site. We are testing and building. Stay tuned for future updates and enhancements!" </p>
         </div>
       )}
 
