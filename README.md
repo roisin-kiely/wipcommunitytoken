@@ -32,7 +32,7 @@ Building this platform on the Ethereum blockchain enables decentralization and t
 - **Alchemy**: Used for connecting to the Sepolia testnet for contract deployment.
 - **Hardhat**: For smart contract deployment and testing.
 - **Etherscan**: For contract verification and monitoring.
-- **Solidity Compare**: Used for contract comparison and review.
+- **Solidity Coverage**: Used to test how code behaves during execution, revealing vulnerabilities otherwise not covered by the scope of a test. 
 - **Visual Studio Code**: The development environment used for writing code.
 - **Remix IDE**: Used for testing and deploying Solidity contracts.
 - **Next.js**: Framework for building the frontend of the platform.
