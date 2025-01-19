@@ -67,12 +67,6 @@ function App() {
         )}
       </header>
 
-      {showPrototypeMessage && (
-        <div className="prototype-message">
-          <p>This is a prototype version of our site. We’re testing and building. Stay tuned for future updates and enhancements!" </p>
-        </div>
-      )}
-
       <SendForm toggle={toggleSendForm} /> {/* Conditionally render SendForm */}
 
       <main>
